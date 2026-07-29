@@ -9,7 +9,7 @@ const adminRouter = require("./routes/admin.route");
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://your-app.vercel.app"],
     credentials: true,
   }),
 );
